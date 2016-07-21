@@ -63,6 +63,30 @@
 		A7AA69041D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
 		A7AA69051D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
 		A7AA69061D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
+		A7AA690B1D412B5A004A5542 /* PSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69081D412B59004A5542 /* PSDataManager.m */; };
+		A7AA690C1D412B5A004A5542 /* PSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69081D412B59004A5542 /* PSDataManager.m */; };
+		A7AA690D1D412B5A004A5542 /* PSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69081D412B59004A5542 /* PSDataManager.m */; };
+		A7AA690E1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA690A1D412B5A004A5542 /* PSApiResponseHandler.m */; };
+		A7AA690F1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA690A1D412B5A004A5542 /* PSApiResponseHandler.m */; };
+		A7AA69101D412B5A004A5542 /* PSApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA690A1D412B5A004A5542 /* PSApiResponseHandler.m */; };
+		A7AA69141D412C2F004A5542 /* UIViewController+Top.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69131D412C2F004A5542 /* UIViewController+Top.m */; };
+		A7AA69151D412C2F004A5542 /* UIViewController+Top.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69131D412C2F004A5542 /* UIViewController+Top.m */; };
+		A7AA69161D412C2F004A5542 /* UIViewController+Top.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69131D412C2F004A5542 /* UIViewController+Top.m */; };
+		A7AA69191D412D9C004A5542 /* PSPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69181D412D9C004A5542 /* PSPhotosManager.m */; };
+		A7AA691A1D412D9C004A5542 /* PSPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69181D412D9C004A5542 /* PSPhotosManager.m */; };
+		A7AA691B1D412D9C004A5542 /* PSPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69181D412D9C004A5542 /* PSPhotosManager.m */; };
+		A7AA691E1D413063004A5542 /* PSPageCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA691D1D413063004A5542 /* PSPageCursor.m */; };
+		A7AA691F1D413063004A5542 /* PSPageCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA691D1D413063004A5542 /* PSPageCursor.m */; };
+		A7AA69201D413063004A5542 /* PSPageCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA691D1D413063004A5542 /* PSPageCursor.m */; };
+		A7AA69241D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */; };
+		A7AA69251D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */; };
+		A7AA69261D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */; };
+		A7AA69291D413452004A5542 /* PSPhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69281D413452004A5542 /* PSPhotosResponse.m */; };
+		A7AA692A1D413452004A5542 /* PSPhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69281D413452004A5542 /* PSPhotosResponse.m */; };
+		A7AA692B1D413452004A5542 /* PSPhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69281D413452004A5542 /* PSPhotosResponse.m */; };
+		A7AA692E1D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
+		A7AA692F1D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
+		A7AA69301D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
 		F6EB9B209D4EC24A864DA6C5 /* libPods-PhotosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +167,22 @@
 		A7AA68FE1D4122A4004A5542 /* PSApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiManager.m; sourceTree = "<group>"; };
 		A7AA69021D412329004A5542 /* PSPhotosApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotosApiManager.h; sourceTree = "<group>"; };
 		A7AA69031D412329004A5542 /* PSPhotosApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosApiManager.m; sourceTree = "<group>"; };
+		A7AA69071D412B59004A5542 /* PSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDataManager.h; sourceTree = "<group>"; };
+		A7AA69081D412B59004A5542 /* PSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDataManager.m; sourceTree = "<group>"; };
+		A7AA69091D412B5A004A5542 /* PSApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApiResponseHandler.h; sourceTree = "<group>"; };
+		A7AA690A1D412B5A004A5542 /* PSApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiResponseHandler.m; sourceTree = "<group>"; };
+		A7AA69121D412C2F004A5542 /* UIViewController+Top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Top.h"; sourceTree = "<group>"; };
+		A7AA69131D412C2F004A5542 /* UIViewController+Top.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Top.m"; sourceTree = "<group>"; };
+		A7AA69171D412D9C004A5542 /* PSPhotosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotosManager.h; sourceTree = "<group>"; };
+		A7AA69181D412D9C004A5542 /* PSPhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosManager.m; sourceTree = "<group>"; };
+		A7AA691C1D413063004A5542 /* PSPageCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPageCursor.h; sourceTree = "<group>"; };
+		A7AA691D1D413063004A5542 /* PSPageCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPageCursor.m; sourceTree = "<group>"; };
+		A7AA69221D41336B004A5542 /* PSPhotosResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotosResponseHandler.h; sourceTree = "<group>"; };
+		A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosResponseHandler.m; sourceTree = "<group>"; };
+		A7AA69271D413452004A5542 /* PSPhotosResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotosResponse.h; sourceTree = "<group>"; };
+		A7AA69281D413452004A5542 /* PSPhotosResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosResponse.m; sourceTree = "<group>"; };
+		A7AA692C1D413466004A5542 /* PSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhoto.h; sourceTree = "<group>"; };
+		A7AA692D1D413466004A5542 /* PSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhoto.m; sourceTree = "<group>"; };
 		D3EDBAC77BD19A415190613F /* libPods-PhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -303,6 +343,7 @@
 		A7AA68A21D40D60F004A5542 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA69111D412C21004A5542 /* Extensions */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,6 +371,10 @@
 		A7AA68A51D40D631004A5542 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA69071D412B59004A5542 /* PSDataManager.h */,
+				A7AA69081D412B59004A5542 /* PSDataManager.m */,
+				A7AA69091D412B5A004A5542 /* PSApiResponseHandler.h */,
+				A7AA690A1D412B5A004A5542 /* PSApiResponseHandler.m */,
 				A7AA68A81D40D682004A5542 /* PhotosManager */,
 			);
 			name = Data;
@@ -340,6 +385,10 @@
 			children = (
 				A7AA68F21D40EB61004A5542 /* PSObject.h */,
 				A7AA68F31D40EB61004A5542 /* PSObject.m */,
+				A7AA692C1D413466004A5542 /* PSPhoto.h */,
+				A7AA692D1D413466004A5542 /* PSPhoto.m */,
+				A7AA69271D413452004A5542 /* PSPhotosResponse.h */,
+				A7AA69281D413452004A5542 /* PSPhotosResponse.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -356,6 +405,11 @@
 		A7AA68A81D40D682004A5542 /* PhotosManager */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA69211D413358004A5542 /* Response Handlers */,
+				A7AA69171D412D9C004A5542 /* PSPhotosManager.h */,
+				A7AA69181D412D9C004A5542 /* PSPhotosManager.m */,
+				A7AA691C1D413063004A5542 /* PSPageCursor.h */,
+				A7AA691D1D413063004A5542 /* PSPageCursor.m */,
 			);
 			name = PhotosManager;
 			sourceTree = "<group>";
@@ -432,6 +486,24 @@
 				A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A7AA69111D412C21004A5542 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA69121D412C2F004A5542 /* UIViewController+Top.h */,
+				A7AA69131D412C2F004A5542 /* UIViewController+Top.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A7AA69211D413358004A5542 /* Response Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA69221D41336B004A5542 /* PSPhotosResponseHandler.h */,
+				A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */,
+			);
+			name = "Response Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -697,20 +769,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AA68FF1D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA690B1D412B5A004A5542 /* PSDataManager.m in Sources */,
 				A7AA68C01D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA69191D412D9C004A5542 /* PSPhotosManager.m in Sources */,
 				A7AA68FC1D40EF87004A5542 /* PSPlayground.m in Sources */,
+				A7AA692E1D413466004A5542 /* PSPhoto.m in Sources */,
+				A7AA69241D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
 				A7AA68C61D40E61F004A5542 /* JSONParseUtils.m in Sources */,
 				A7AA68D11D40E63C004A5542 /* NSError+API.m in Sources */,
 				A7AA68E61D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
 				A7AA68DD1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
 				A7AA68BD1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
+				A7AA690E1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
 				A7AA68731D40D3B7004A5542 /* ViewController.m in Sources */,
 				A7AA68701D40D3B7004A5542 /* AppDelegate.m in Sources */,
 				A7AA68E01D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68E31D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA69141D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA69041D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA69291D413452004A5542 /* PSPhotosResponse.m in Sources */,
 				A7AA68AD1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA686D1D40D3B7004A5542 /* main.m in Sources */,
+				A7AA691E1D413063004A5542 /* PSPageCursor.m in Sources */,
 				A7AA68F41D40EB61004A5542 /* PSObject.m in Sources */,
 				A7AA68B61D40D759004A5542 /* PSAppConfig.m in Sources */,
 				A7AA68CE1D40E63C004A5542 /* PSServerSentError.m in Sources */,
@@ -722,20 +802,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AA69001D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA690C1D412B5A004A5542 /* PSDataManager.m in Sources */,
 				A7AA68E41D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA691A1D412D9C004A5542 /* PSPhotosManager.m in Sources */,
 				A7AA68D21D40E63C004A5542 /* NSError+API.m in Sources */,
+				A7AA692F1D413466004A5542 /* PSPhoto.m in Sources */,
+				A7AA69251D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
 				A7AA68CF1D40E63C004A5542 /* PSServerSentError.m in Sources */,
 				A7AA68DE1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
 				A7AA68ED1D40E8C8004A5542 /* PSTestCase.m in Sources */,
 				A7AA68E11D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68BE1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
+				A7AA690F1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
 				A7AA68B71D40D759004A5542 /* PSAppConfig.m in Sources */,
 				A7AA68AE1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA68F51D40EB61004A5542 /* PSObject.m in Sources */,
 				A7AA68C11D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA69151D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA69051D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA692A1D413452004A5542 /* PSPhotosResponse.m in Sources */,
 				A7AA68E71D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
 				A7AA68C71D40E61F004A5542 /* JSONParseUtils.m in Sources */,
+				A7AA691F1D413063004A5542 /* PSPageCursor.m in Sources */,
 				A7AA68EF1D40E985004A5542 /* PSRequestSerializer_Tests.m in Sources */,
 				A7AA68EA1D40E894004A5542 /* PSApiClient_Tests.m in Sources */,
 				A7AA68F11D40E99C004A5542 /* PSResponseSerializer_Tests.m in Sources */,
@@ -748,19 +836,27 @@
 			files = (
 				A7AA68E51D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
 				A7AA68D31D40E63C004A5542 /* NSError+API.m in Sources */,
+				A7AA69161D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA68D01D40E63C004A5542 /* PSServerSentError.m in Sources */,
 				A7AA68DF1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
 				A7AA68E21D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68BF1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
+				A7AA69201D413063004A5542 /* PSPageCursor.m in Sources */,
+				A7AA692B1D413452004A5542 /* PSPhotosResponse.m in Sources */,
+				A7AA69101D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
 				A7AA69061D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA691B1D412D9C004A5542 /* PSPhotosManager.m in Sources */,
 				A7AA68B81D40D759004A5542 /* PSAppConfig.m in Sources */,
 				A7AA68AF1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA68C21D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA69261D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
 				A7AA68F61D40EB61004A5542 /* PSObject.m in Sources */,
 				A7AA68E81D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
+				A7AA690D1D412B5A004A5542 /* PSDataManager.m in Sources */,
 				A7AA68911D40D3B8004A5542 /* PhotosUITests.m in Sources */,
 				A7AA68C81D40E61F004A5542 /* JSONParseUtils.m in Sources */,
 				A7AA69011D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA69301D413466004A5542 /* PSPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

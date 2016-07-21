@@ -11,20 +11,6 @@
 
 @implementation PSObject
 
-#pragma mark - Initialization
-
-+ (instancetype)objectWithId:(NSString *)objectId
-{
-    PSObject *result = nil;
-    
-    if (objectId.length && self != [PSObject class]) {
-        result = [self new];
-        result.objectId = objectId;
-    }
-    
-    return result;
-}
-
 #pragma mark - NSCoding
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {

@@ -8,6 +8,7 @@
 
 #import "PSPlayground.h"
 #import "PSPhotosApiManager.h"
+#import "PSPhotosManager.h"
 
 @implementation PSPlayground
 
@@ -27,14 +28,23 @@
 #pragma mark - Public methods
 
 - (void)play {
-    PSPhotosApiManager *photosApiManager = [PSPhotosApiManager sharedManager];
+//    PSPhotosApiManager *photosApiManager = [PSPhotosApiManager sharedManager];
+//    
+//    [photosApiManager photosWithWithInfo:@{
+//                                           @"text" : @"cat"
+//                                               }
+//                              completion:^(id result, NSError *error) {
+//                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
+//                              }];
     
-    [photosApiManager photosWithWithInfo:@{
-                                           @"text" : @"cat"
-                                               }
-                              completion:^(id result, NSError *error) {
+    PSPhotosManager *photosManager = [PSPhotosManager sharedManager];
+    
+    [photosManager photosWithSearchText:@"cats"
+                             pageCursor:[PSPageCursor cursorWithPage:@(1)
+                                                             perPage:nil]
+                             completion:^(id result, NSError *error) {
                                   NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
-                              }];
+                             }];
 }
 
 @end
