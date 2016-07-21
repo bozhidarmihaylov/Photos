@@ -37,14 +37,14 @@
 //                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
 //                              }];
     
-    PSPhotosManager *photosManager = [PSPhotosManager sharedManager];
-    
-    [photosManager photosWithSearchText:@"cats"
-                             pageCursor:[PSPageCursor cursorWithPage:@(1)
-                                                             perPage:nil]
-                             completion:^(id result, NSError *error) {
-                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
-                             }];
+//    PSPhotosManager *photosManager = [PSPhotosManager sharedManager];
+//    
+//    [photosManager photosWithSearchText:@"cats"
+//                             pageCursor:[PSPageCursor cursorWithPage:@(1)
+//                                                             perPage:nil]
+//                             completion:^(id result, NSError *error) {
+//                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
+//                             }];
 }
 
 @end

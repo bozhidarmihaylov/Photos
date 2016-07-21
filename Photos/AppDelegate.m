@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PSAppCoordinator.h"
 #import "PSPlayground.h"
 
 @interface AppDelegate ()
@@ -17,8 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[PSPlayground playgroundWithWindow:self.window] play];
+    [[PSAppCoordinator sharedCoordinator] setupInitialUI];
     
+    [[PSPlayground playgroundWithWindow:self.window] play];
+        
     return YES;
 }
 

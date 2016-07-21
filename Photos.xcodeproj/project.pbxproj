@@ -12,7 +12,6 @@
 		A7AA686D1D40D3B7004A5542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA686C1D40D3B7004A5542 /* main.m */; };
 		A7AA68701D40D3B7004A5542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA686F1D40D3B7004A5542 /* AppDelegate.m */; };
 		A7AA68731D40D3B7004A5542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68721D40D3B7004A5542 /* ViewController.m */; };
-		A7AA68761D40D3B7004A5542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68741D40D3B7004A5542 /* Main.storyboard */; };
 		A7AA68781D40D3B7004A5542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68771D40D3B7004A5542 /* Assets.xcassets */; };
 		A7AA687B1D40D3B7004A5542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68791D40D3B7004A5542 /* LaunchScreen.storyboard */; };
 		A7AA68911D40D3B8004A5542 /* PhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68901D40D3B8004A5542 /* PhotosUITests.m */; };
@@ -87,6 +86,27 @@
 		A7AA692E1D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
 		A7AA692F1D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
 		A7AA69301D413466004A5542 /* PSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA692D1D413466004A5542 /* PSPhoto.m */; };
+		A7AA69331D413C85004A5542 /* UIViewController+Embed.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69321D413C85004A5542 /* UIViewController+Embed.m */; };
+		A7AA69341D413C85004A5542 /* UIViewController+Embed.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69321D413C85004A5542 /* UIViewController+Embed.m */; };
+		A7AA69351D413C85004A5542 /* UIViewController+Embed.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69321D413C85004A5542 /* UIViewController+Embed.m */; };
+		A7AA69381D413E03004A5542 /* PSAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69371D413E03004A5542 /* PSAppCoordinator.m */; };
+		A7AA69391D413E03004A5542 /* PSAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69371D413E03004A5542 /* PSAppCoordinator.m */; };
+		A7AA693A1D413E03004A5542 /* PSAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69371D413E03004A5542 /* PSAppCoordinator.m */; };
+		A7AA693F1D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA693D1D413FEB004A5542 /* PSPhotoGridViewController.m */; };
+		A7AA69401D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA693D1D413FEB004A5542 /* PSPhotoGridViewController.m */; };
+		A7AA69411D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA693D1D413FEB004A5542 /* PSPhotoGridViewController.m */; };
+		A7AA69421D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA693E1D413FEB004A5542 /* PSPhotoGridViewController.xib */; };
+		A7AA69431D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA693E1D413FEB004A5542 /* PSPhotoGridViewController.xib */; };
+		A7AA69441D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA693E1D413FEB004A5542 /* PSPhotoGridViewController.xib */; };
+		A7AA69491D414009004A5542 /* PSThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69471D414009004A5542 /* PSThumbnailCell.m */; };
+		A7AA694A1D414009004A5542 /* PSThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69471D414009004A5542 /* PSThumbnailCell.m */; };
+		A7AA694B1D414009004A5542 /* PSThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69471D414009004A5542 /* PSThumbnailCell.m */; };
+		A7AA694C1D414009004A5542 /* PSThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69481D414009004A5542 /* PSThumbnailCell.xib */; };
+		A7AA694D1D414009004A5542 /* PSThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69481D414009004A5542 /* PSThumbnailCell.xib */; };
+		A7AA694E1D414009004A5542 /* PSThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69481D414009004A5542 /* PSThumbnailCell.xib */; };
+		A7AA69521D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69511D4140E9004A5542 /* PSPhotoGridDataSource.m */; };
+		A7AA69531D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69511D4140E9004A5542 /* PSPhotoGridDataSource.m */; };
+		A7AA69541D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69511D4140E9004A5542 /* PSPhotoGridDataSource.m */; };
 		F6EB9B209D4EC24A864DA6C5 /* libPods-PhotosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +141,6 @@
 		A7AA686F1D40D3B7004A5542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A7AA68711D40D3B7004A5542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A7AA68721D40D3B7004A5542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A7AA68751D40D3B7004A5542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7AA68771D40D3B7004A5542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7AA687A1D40D3B7004A5542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7AA687C1D40D3B7004A5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +202,18 @@
 		A7AA69281D413452004A5542 /* PSPhotosResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosResponse.m; sourceTree = "<group>"; };
 		A7AA692C1D413466004A5542 /* PSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhoto.h; sourceTree = "<group>"; };
 		A7AA692D1D413466004A5542 /* PSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhoto.m; sourceTree = "<group>"; };
+		A7AA69311D413C85004A5542 /* UIViewController+Embed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Embed.h"; sourceTree = "<group>"; };
+		A7AA69321D413C85004A5542 /* UIViewController+Embed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Embed.m"; sourceTree = "<group>"; };
+		A7AA69361D413E03004A5542 /* PSAppCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAppCoordinator.h; sourceTree = "<group>"; };
+		A7AA69371D413E03004A5542 /* PSAppCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAppCoordinator.m; sourceTree = "<group>"; };
+		A7AA693C1D413FEB004A5542 /* PSPhotoGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotoGridViewController.h; sourceTree = "<group>"; };
+		A7AA693D1D413FEB004A5542 /* PSPhotoGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotoGridViewController.m; sourceTree = "<group>"; };
+		A7AA693E1D413FEB004A5542 /* PSPhotoGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSPhotoGridViewController.xib; sourceTree = "<group>"; };
+		A7AA69461D414009004A5542 /* PSThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSThumbnailCell.h; sourceTree = "<group>"; };
+		A7AA69471D414009004A5542 /* PSThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSThumbnailCell.m; sourceTree = "<group>"; };
+		A7AA69481D414009004A5542 /* PSThumbnailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSThumbnailCell.xib; sourceTree = "<group>"; };
+		A7AA69501D4140E9004A5542 /* PSPhotoGridDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotoGridDataSource.h; sourceTree = "<group>"; };
+		A7AA69511D4140E9004A5542 /* PSPhotoGridDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotoGridDataSource.m; sourceTree = "<group>"; };
 		D3EDBAC77BD19A415190613F /* libPods-PhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -273,7 +304,6 @@
 				A7AA68FB1D40EF87004A5542 /* PSPlayground.m */,
 				A7AA68711D40D3B7004A5542 /* ViewController.h */,
 				A7AA68721D40D3B7004A5542 /* ViewController.m */,
-				A7AA68741D40D3B7004A5542 /* Main.storyboard */,
 				A7AA68771D40D3B7004A5542 /* Assets.xcassets */,
 				A7AA68791D40D3B7004A5542 /* LaunchScreen.storyboard */,
 				A7AA687C1D40D3B7004A5542 /* Info.plist */,
@@ -316,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AA68A31D40D61A004A5542 /* Photo Search */,
+				A7AA693B1D413FD9004A5542 /* Photo Grid */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -344,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				A7AA69111D412C21004A5542 /* Extensions */,
+				A7AA69361D413E03004A5542 /* PSAppCoordinator.h */,
+				A7AA69371D413E03004A5542 /* PSAppCoordinator.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -491,6 +524,8 @@
 		A7AA69111D412C21004A5542 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA69311D413C85004A5542 /* UIViewController+Embed.h */,
+				A7AA69321D413C85004A5542 /* UIViewController+Embed.m */,
 				A7AA69121D412C2F004A5542 /* UIViewController+Top.h */,
 				A7AA69131D412C2F004A5542 /* UIViewController+Top.m */,
 			);
@@ -504,6 +539,37 @@
 				A7AA69231D41336B004A5542 /* PSPhotosResponseHandler.m */,
 			);
 			name = "Response Handlers";
+			sourceTree = "<group>";
+		};
+		A7AA693B1D413FD9004A5542 /* Photo Grid */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA694F1D4140CD004A5542 /* Data Source */,
+				A7AA69451D413FFC004A5542 /* Views */,
+				A7AA693C1D413FEB004A5542 /* PSPhotoGridViewController.h */,
+				A7AA693D1D413FEB004A5542 /* PSPhotoGridViewController.m */,
+				A7AA693E1D413FEB004A5542 /* PSPhotoGridViewController.xib */,
+			);
+			name = "Photo Grid";
+			sourceTree = "<group>";
+		};
+		A7AA69451D413FFC004A5542 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA69461D414009004A5542 /* PSThumbnailCell.h */,
+				A7AA69471D414009004A5542 /* PSThumbnailCell.m */,
+				A7AA69481D414009004A5542 /* PSThumbnailCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A7AA694F1D4140CD004A5542 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA69501D4140E9004A5542 /* PSPhotoGridDataSource.h */,
+				A7AA69511D4140E9004A5542 /* PSPhotoGridDataSource.m */,
+			);
+			name = "Data Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -619,8 +685,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AA687B1D40D3B7004A5542 /* LaunchScreen.storyboard in Resources */,
+				A7AA69421D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */,
 				A7AA68781D40D3B7004A5542 /* Assets.xcassets in Resources */,
-				A7AA68761D40D3B7004A5542 /* Main.storyboard in Resources */,
+				A7AA694C1D414009004A5542 /* PSThumbnailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +695,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AA69431D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */,
+				A7AA694D1D414009004A5542 /* PSThumbnailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +704,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AA69441D413FEB004A5542 /* PSPhotoGridViewController.xib in Resources */,
+				A7AA694E1D414009004A5542 /* PSThumbnailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,9 +840,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AA68FF1D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA69491D414009004A5542 /* PSThumbnailCell.m in Sources */,
 				A7AA690B1D412B5A004A5542 /* PSDataManager.m in Sources */,
 				A7AA68C01D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
 				A7AA69191D412D9C004A5542 /* PSPhotosManager.m in Sources */,
+				A7AA69521D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */,
+				A7AA69381D413E03004A5542 /* PSAppCoordinator.m in Sources */,
 				A7AA68FC1D40EF87004A5542 /* PSPlayground.m in Sources */,
 				A7AA692E1D413466004A5542 /* PSPhoto.m in Sources */,
 				A7AA69241D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
@@ -781,10 +855,12 @@
 				A7AA68DD1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
 				A7AA68BD1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
 				A7AA690E1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
+				A7AA693F1D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */,
 				A7AA68731D40D3B7004A5542 /* ViewController.m in Sources */,
 				A7AA68701D40D3B7004A5542 /* AppDelegate.m in Sources */,
 				A7AA68E01D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68E31D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA69331D413C85004A5542 /* UIViewController+Embed.m in Sources */,
 				A7AA69141D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA69041D412329004A5542 /* PSPhotosApiManager.m in Sources */,
 				A7AA69291D413452004A5542 /* PSPhotosResponse.m in Sources */,
@@ -802,9 +878,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AA69001D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA694A1D414009004A5542 /* PSThumbnailCell.m in Sources */,
 				A7AA690C1D412B5A004A5542 /* PSDataManager.m in Sources */,
 				A7AA68E41D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
 				A7AA691A1D412D9C004A5542 /* PSPhotosManager.m in Sources */,
+				A7AA69531D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */,
+				A7AA69391D413E03004A5542 /* PSAppCoordinator.m in Sources */,
 				A7AA68D21D40E63C004A5542 /* NSError+API.m in Sources */,
 				A7AA692F1D413466004A5542 /* PSPhoto.m in Sources */,
 				A7AA69251D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
@@ -814,10 +893,12 @@
 				A7AA68E11D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68BE1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
 				A7AA690F1D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
+				A7AA69401D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */,
 				A7AA68B71D40D759004A5542 /* PSAppConfig.m in Sources */,
 				A7AA68AE1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA68F51D40EB61004A5542 /* PSObject.m in Sources */,
 				A7AA68C11D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA69341D413C85004A5542 /* UIViewController+Embed.m in Sources */,
 				A7AA69151D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA69051D412329004A5542 /* PSPhotosApiManager.m in Sources */,
 				A7AA692A1D413452004A5542 /* PSPhotosResponse.m in Sources */,
@@ -838,17 +919,22 @@
 				A7AA68D31D40E63C004A5542 /* NSError+API.m in Sources */,
 				A7AA69161D412C2F004A5542 /* UIViewController+Top.m in Sources */,
 				A7AA68D01D40E63C004A5542 /* PSServerSentError.m in Sources */,
+				A7AA694B1D414009004A5542 /* PSThumbnailCell.m in Sources */,
+				A7AA69411D413FEB004A5542 /* PSPhotoGridViewController.m in Sources */,
 				A7AA68DF1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
 				A7AA68E21D40E78C004A5542 /* NSObject+JSON.m in Sources */,
 				A7AA68BF1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
 				A7AA69201D413063004A5542 /* PSPageCursor.m in Sources */,
+				A7AA69351D413C85004A5542 /* UIViewController+Embed.m in Sources */,
 				A7AA692B1D413452004A5542 /* PSPhotosResponse.m in Sources */,
+				A7AA69541D4140E9004A5542 /* PSPhotoGridDataSource.m in Sources */,
 				A7AA69101D412B5A004A5542 /* PSApiResponseHandler.m in Sources */,
 				A7AA69061D412329004A5542 /* PSPhotosApiManager.m in Sources */,
 				A7AA691B1D412D9C004A5542 /* PSPhotosManager.m in Sources */,
 				A7AA68B81D40D759004A5542 /* PSAppConfig.m in Sources */,
 				A7AA68AF1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA68C21D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA693A1D413E03004A5542 /* PSAppCoordinator.m in Sources */,
 				A7AA69261D41336B004A5542 /* PSPhotosResponseHandler.m in Sources */,
 				A7AA68F61D40EB61004A5542 /* PSObject.m in Sources */,
 				A7AA68E81D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
@@ -876,14 +962,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7AA68741D40D3B7004A5542 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7AA68751D40D3B7004A5542 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7AA68791D40D3B7004A5542 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

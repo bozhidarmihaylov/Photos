@@ -17,19 +17,22 @@ PODS:
   - MBProgressHUD (0.9.2)
   - ObjectiveSugar (1.1.0)
   - OCMock (3.3)
+  - PINCache (2.2.2)
 
 DEPENDENCIES:
   - AFNetworking
   - MBProgressHUD
   - ObjectiveSugar
   - OCMock
+  - PINCache
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
 
-PODFILE CHECKSUM: 2e884952ab71193ef76baf69688a97c5d914f9ba
+PODFILE CHECKSUM: 869295f8774887bc5d7446773e0f1e006ac5d89c
 
 COCOAPODS: 1.0.1
