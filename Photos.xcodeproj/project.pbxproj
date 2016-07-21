@@ -141,6 +141,10 @@
 		A7AA686A1D40D3B7004A5542 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA689F1D40D5F9004A5542 /* Scenes */,
+				A7AA68A01D40D600004A5542 /* Model */,
+				A7AA68A11D40D608004A5542 /* View */,
+				A7AA68A21D40D60F004A5542 /* Controller */,
 				A7AA686E1D40D3B7004A5542 /* AppDelegate.h */,
 				A7AA686F1D40D3B7004A5542 /* AppDelegate.m */,
 				A7AA68711D40D3B7004A5542 /* ViewController.h */,
@@ -178,6 +182,66 @@
 				A7AA68921D40D3B8004A5542 /* Info.plist */,
 			);
 			path = PhotosUITests;
+			sourceTree = "<group>";
+		};
+		A7AA689F1D40D5F9004A5542 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68A31D40D61A004A5542 /* Photo Search */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		A7AA68A01D40D600004A5542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68A61D40D636004A5542 /* Objects */,
+				A7AA68A51D40D631004A5542 /* Data */,
+				A7AA68A41D40D62B004A5542 /* Api */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A7AA68A11D40D608004A5542 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7AA68A21D40D60F004A5542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A7AA68A31D40D61A004A5542 /* Photo Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Photo Search";
+			sourceTree = "<group>";
+		};
+		A7AA68A41D40D62B004A5542 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		A7AA68A51D40D631004A5542 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		A7AA68A61D40D636004A5542 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
