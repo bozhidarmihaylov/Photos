@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PSPlayground.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[PSPlayground playgroundWithWindow:self.window] play];
+    
     return YES;
 }
 

@@ -15,8 +15,54 @@
 		A7AA68761D40D3B7004A5542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68741D40D3B7004A5542 /* Main.storyboard */; };
 		A7AA68781D40D3B7004A5542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68771D40D3B7004A5542 /* Assets.xcassets */; };
 		A7AA687B1D40D3B7004A5542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AA68791D40D3B7004A5542 /* LaunchScreen.storyboard */; };
-		A7AA68861D40D3B8004A5542 /* PhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68851D40D3B8004A5542 /* PhotosTests.m */; };
 		A7AA68911D40D3B8004A5542 /* PhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68901D40D3B8004A5542 /* PhotosUITests.m */; };
+		A7AA68AD1D40D6C9004A5542 /* PSApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68AC1D40D6C9004A5542 /* PSApiClient.m */; };
+		A7AA68AE1D40D6C9004A5542 /* PSApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68AC1D40D6C9004A5542 /* PSApiClient.m */; };
+		A7AA68AF1D40D6C9004A5542 /* PSApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68AC1D40D6C9004A5542 /* PSApiClient.m */; };
+		A7AA68B61D40D759004A5542 /* PSAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68B51D40D759004A5542 /* PSAppConfig.m */; };
+		A7AA68B71D40D759004A5542 /* PSAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68B51D40D759004A5542 /* PSAppConfig.m */; };
+		A7AA68B81D40D759004A5542 /* PSAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68B51D40D759004A5542 /* PSAppConfig.m */; };
+		A7AA68BD1D40D83C004A5542 /* PSRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BA1D40D83C004A5542 /* PSRequestSerializer.m */; };
+		A7AA68BE1D40D83C004A5542 /* PSRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BA1D40D83C004A5542 /* PSRequestSerializer.m */; };
+		A7AA68BF1D40D83C004A5542 /* PSRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BA1D40D83C004A5542 /* PSRequestSerializer.m */; };
+		A7AA68C01D40D83C004A5542 /* PSResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BC1D40D83C004A5542 /* PSResponseSerializer.m */; };
+		A7AA68C11D40D83C004A5542 /* PSResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BC1D40D83C004A5542 /* PSResponseSerializer.m */; };
+		A7AA68C21D40D83C004A5542 /* PSResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68BC1D40D83C004A5542 /* PSResponseSerializer.m */; };
+		A7AA68C61D40E61F004A5542 /* JSONParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68C51D40E61F004A5542 /* JSONParseUtils.m */; };
+		A7AA68C71D40E61F004A5542 /* JSONParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68C51D40E61F004A5542 /* JSONParseUtils.m */; };
+		A7AA68C81D40E61F004A5542 /* JSONParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68C51D40E61F004A5542 /* JSONParseUtils.m */; };
+		A7AA68CE1D40E63C004A5542 /* PSServerSentError.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CB1D40E63C004A5542 /* PSServerSentError.m */; };
+		A7AA68CF1D40E63C004A5542 /* PSServerSentError.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CB1D40E63C004A5542 /* PSServerSentError.m */; };
+		A7AA68D01D40E63C004A5542 /* PSServerSentError.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CB1D40E63C004A5542 /* PSServerSentError.m */; };
+		A7AA68D11D40E63C004A5542 /* NSError+API.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CD1D40E63C004A5542 /* NSError+API.m */; };
+		A7AA68D21D40E63C004A5542 /* NSError+API.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CD1D40E63C004A5542 /* NSError+API.m */; };
+		A7AA68D31D40E63C004A5542 /* NSError+API.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68CD1D40E63C004A5542 /* NSError+API.m */; };
+		A7AA68DD1D40E78C004A5542 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D61D40E78C004A5542 /* NSObject+Runtime.m */; };
+		A7AA68DE1D40E78C004A5542 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D61D40E78C004A5542 /* NSObject+Runtime.m */; };
+		A7AA68DF1D40E78C004A5542 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D61D40E78C004A5542 /* NSObject+Runtime.m */; };
+		A7AA68E01D40E78C004A5542 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D81D40E78C004A5542 /* NSObject+JSON.m */; };
+		A7AA68E11D40E78C004A5542 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D81D40E78C004A5542 /* NSObject+JSON.m */; };
+		A7AA68E21D40E78C004A5542 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68D81D40E78C004A5542 /* NSObject+JSON.m */; };
+		A7AA68E31D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DA1D40E78C004A5542 /* NSDictionary+StripNil.m */; };
+		A7AA68E41D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DA1D40E78C004A5542 /* NSDictionary+StripNil.m */; };
+		A7AA68E51D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DA1D40E78C004A5542 /* NSDictionary+StripNil.m */; };
+		A7AA68E61D40E78C004A5542 /* NSArray+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */; };
+		A7AA68E71D40E78C004A5542 /* NSArray+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */; };
+		A7AA68E81D40E78C004A5542 /* NSArray+StripNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */; };
+		A7AA68EA1D40E894004A5542 /* PSApiClient_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68E91D40E894004A5542 /* PSApiClient_Tests.m */; };
+		A7AA68ED1D40E8C8004A5542 /* PSTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68EC1D40E8C8004A5542 /* PSTestCase.m */; };
+		A7AA68EF1D40E985004A5542 /* PSRequestSerializer_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68EE1D40E985004A5542 /* PSRequestSerializer_Tests.m */; };
+		A7AA68F11D40E99C004A5542 /* PSResponseSerializer_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68F01D40E99C004A5542 /* PSResponseSerializer_Tests.m */; };
+		A7AA68F41D40EB61004A5542 /* PSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68F31D40EB61004A5542 /* PSObject.m */; };
+		A7AA68F51D40EB61004A5542 /* PSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68F31D40EB61004A5542 /* PSObject.m */; };
+		A7AA68F61D40EB61004A5542 /* PSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68F31D40EB61004A5542 /* PSObject.m */; };
+		A7AA68FC1D40EF87004A5542 /* PSPlayground.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68FB1D40EF87004A5542 /* PSPlayground.m */; };
+		A7AA68FF1D4122A4004A5542 /* PSApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68FE1D4122A4004A5542 /* PSApiManager.m */; };
+		A7AA69001D4122A4004A5542 /* PSApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68FE1D4122A4004A5542 /* PSApiManager.m */; };
+		A7AA69011D4122A4004A5542 /* PSApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA68FE1D4122A4004A5542 /* PSApiManager.m */; };
+		A7AA69041D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
+		A7AA69051D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
+		A7AA69061D412329004A5542 /* PSPhotosApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA69031D412329004A5542 /* PSPhotosApiManager.m */; };
 		F6EB9B209D4EC24A864DA6C5 /* libPods-PhotosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,11 +102,47 @@
 		A7AA687A1D40D3B7004A5542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7AA687C1D40D3B7004A5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AA68811D40D3B8004A5542 /* PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7AA68851D40D3B8004A5542 /* PhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosTests.m; sourceTree = "<group>"; };
 		A7AA68871D40D3B8004A5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AA688C1D40D3B8004A5542 /* PhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AA68901D40D3B8004A5542 /* PhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosUITests.m; sourceTree = "<group>"; };
 		A7AA68921D40D3B8004A5542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AA68AB1D40D6C9004A5542 /* PSApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApiClient.h; sourceTree = "<group>"; };
+		A7AA68AC1D40D6C9004A5542 /* PSApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiClient.m; sourceTree = "<group>"; };
+		A7AA68B11D40D6FF004A5542 /* ActionBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionBlock.h; sourceTree = "<group>"; };
+		A7AA68B21D40D6FF004A5542 /* ActionBlockTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionBlockTransformer.h; sourceTree = "<group>"; };
+		A7AA68B41D40D759004A5542 /* PSAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAppConfig.h; sourceTree = "<group>"; };
+		A7AA68B51D40D759004A5542 /* PSAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAppConfig.m; sourceTree = "<group>"; };
+		A7AA68B91D40D83C004A5542 /* PSRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRequestSerializer.h; sourceTree = "<group>"; };
+		A7AA68BA1D40D83C004A5542 /* PSRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRequestSerializer.m; sourceTree = "<group>"; };
+		A7AA68BB1D40D83C004A5542 /* PSResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSResponseSerializer.h; sourceTree = "<group>"; };
+		A7AA68BC1D40D83C004A5542 /* PSResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSResponseSerializer.m; sourceTree = "<group>"; };
+		A7AA68C41D40E61F004A5542 /* JSONParseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParseUtils.h; sourceTree = "<group>"; };
+		A7AA68C51D40E61F004A5542 /* JSONParseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParseUtils.m; sourceTree = "<group>"; };
+		A7AA68CA1D40E63C004A5542 /* PSServerSentError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSServerSentError.h; sourceTree = "<group>"; };
+		A7AA68CB1D40E63C004A5542 /* PSServerSentError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSServerSentError.m; sourceTree = "<group>"; };
+		A7AA68CC1D40E63C004A5542 /* NSError+API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+API.h"; sourceTree = "<group>"; };
+		A7AA68CD1D40E63C004A5542 /* NSError+API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+API.m"; sourceTree = "<group>"; };
+		A7AA68D51D40E78C004A5542 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		A7AA68D61D40E78C004A5542 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		A7AA68D71D40E78C004A5542 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		A7AA68D81D40E78C004A5542 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		A7AA68D91D40E78C004A5542 /* NSDictionary+StripNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+StripNil.h"; sourceTree = "<group>"; };
+		A7AA68DA1D40E78C004A5542 /* NSDictionary+StripNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+StripNil.m"; sourceTree = "<group>"; };
+		A7AA68DB1D40E78C004A5542 /* NSArray+StripNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+StripNil.h"; sourceTree = "<group>"; };
+		A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+StripNil.m"; sourceTree = "<group>"; };
+		A7AA68E91D40E894004A5542 /* PSApiClient_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiClient_Tests.m; sourceTree = "<group>"; };
+		A7AA68EB1D40E8C8004A5542 /* PSTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTestCase.h; sourceTree = "<group>"; };
+		A7AA68EC1D40E8C8004A5542 /* PSTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTestCase.m; sourceTree = "<group>"; };
+		A7AA68EE1D40E985004A5542 /* PSRequestSerializer_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRequestSerializer_Tests.m; sourceTree = "<group>"; };
+		A7AA68F01D40E99C004A5542 /* PSResponseSerializer_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSResponseSerializer_Tests.m; sourceTree = "<group>"; };
+		A7AA68F21D40EB61004A5542 /* PSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSObject.h; sourceTree = "<group>"; };
+		A7AA68F31D40EB61004A5542 /* PSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSObject.m; sourceTree = "<group>"; };
+		A7AA68FA1D40EF87004A5542 /* PSPlayground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPlayground.h; sourceTree = "<group>"; };
+		A7AA68FB1D40EF87004A5542 /* PSPlayground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPlayground.m; sourceTree = "<group>"; };
+		A7AA68FD1D4122A4004A5542 /* PSApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApiManager.h; sourceTree = "<group>"; };
+		A7AA68FE1D4122A4004A5542 /* PSApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiManager.m; sourceTree = "<group>"; };
+		A7AA69021D412329004A5542 /* PSPhotosApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotosApiManager.h; sourceTree = "<group>"; };
+		A7AA69031D412329004A5542 /* PSPhotosApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotosApiManager.m; sourceTree = "<group>"; };
 		D3EDBAC77BD19A415190613F /* libPods-PhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +229,8 @@
 				A7AA68A21D40D60F004A5542 /* Controller */,
 				A7AA686E1D40D3B7004A5542 /* AppDelegate.h */,
 				A7AA686F1D40D3B7004A5542 /* AppDelegate.m */,
+				A7AA68FA1D40EF87004A5542 /* PSPlayground.h */,
+				A7AA68FB1D40EF87004A5542 /* PSPlayground.m */,
 				A7AA68711D40D3B7004A5542 /* ViewController.h */,
 				A7AA68721D40D3B7004A5542 /* ViewController.m */,
 				A7AA68741D40D3B7004A5542 /* Main.storyboard */,
@@ -169,8 +253,12 @@
 		A7AA68841D40D3B8004A5542 /* PhotosTests */ = {
 			isa = PBXGroup;
 			children = (
-				A7AA68851D40D3B8004A5542 /* PhotosTests.m */,
+				A7AA68EB1D40E8C8004A5542 /* PSTestCase.h */,
+				A7AA68EC1D40E8C8004A5542 /* PSTestCase.m */,
 				A7AA68871D40D3B8004A5542 /* Info.plist */,
+				A7AA68E91D40E894004A5542 /* PSApiClient_Tests.m */,
+				A7AA68EE1D40E985004A5542 /* PSRequestSerializer_Tests.m */,
+				A7AA68F01D40E99C004A5542 /* PSResponseSerializer_Tests.m */,
 			);
 			path = PhotosTests;
 			sourceTree = "<group>";
@@ -195,7 +283,10 @@
 		A7AA68A01D40D600004A5542 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7AA68A61D40D636004A5542 /* Objects */,
+				A7AA68D41D40E76E004A5542 /* Extensions */,
+				A7AA68B31D40D73E004A5542 /* AppConfig */,
+				A7AA68B01D40D6E5004A5542 /* Operation Blocks */,
+				A7AA68A61D40D636004A5542 /* Entities */,
 				A7AA68A51D40D631004A5542 /* Data */,
 				A7AA68A41D40D62B004A5542 /* Api */,
 			);
@@ -226,6 +317,12 @@
 		A7AA68A41D40D62B004A5542 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA68C91D40E62A004A5542 /* Errors */,
+				A7AA68C31D40E613004A5542 /* JSON */,
+				A7AA68A91D40D6A3004A5542 /* HTTP Client */,
+				A7AA68FD1D4122A4004A5542 /* PSApiManager.h */,
+				A7AA68FE1D4122A4004A5542 /* PSApiManager.m */,
+				A7AA68A71D40D65F004A5542 /* PhotosApiManager */,
 			);
 			name = Api;
 			sourceTree = "<group>";
@@ -233,15 +330,108 @@
 		A7AA68A51D40D631004A5542 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A7AA68A81D40D682004A5542 /* PhotosManager */,
 			);
 			name = Data;
 			sourceTree = "<group>";
 		};
-		A7AA68A61D40D636004A5542 /* Objects */ = {
+		A7AA68A61D40D636004A5542 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68F21D40EB61004A5542 /* PSObject.h */,
+				A7AA68F31D40EB61004A5542 /* PSObject.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A7AA68A71D40D65F004A5542 /* PhotosApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA69021D412329004A5542 /* PSPhotosApiManager.h */,
+				A7AA69031D412329004A5542 /* PSPhotosApiManager.m */,
+			);
+			name = PhotosApiManager;
+			sourceTree = "<group>";
+		};
+		A7AA68A81D40D682004A5542 /* PhotosManager */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Objects;
+			name = PhotosManager;
+			sourceTree = "<group>";
+		};
+		A7AA68A91D40D6A3004A5542 /* HTTP Client */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68AA1D40D6B1004A5542 /* Serialization */,
+				A7AA68AB1D40D6C9004A5542 /* PSApiClient.h */,
+				A7AA68AC1D40D6C9004A5542 /* PSApiClient.m */,
+			);
+			name = "HTTP Client";
+			sourceTree = "<group>";
+		};
+		A7AA68AA1D40D6B1004A5542 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68B91D40D83C004A5542 /* PSRequestSerializer.h */,
+				A7AA68BA1D40D83C004A5542 /* PSRequestSerializer.m */,
+				A7AA68BB1D40D83C004A5542 /* PSResponseSerializer.h */,
+				A7AA68BC1D40D83C004A5542 /* PSResponseSerializer.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		A7AA68B01D40D6E5004A5542 /* Operation Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68B11D40D6FF004A5542 /* ActionBlock.h */,
+				A7AA68B21D40D6FF004A5542 /* ActionBlockTransformer.h */,
+			);
+			name = "Operation Blocks";
+			sourceTree = "<group>";
+		};
+		A7AA68B31D40D73E004A5542 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68B41D40D759004A5542 /* PSAppConfig.h */,
+				A7AA68B51D40D759004A5542 /* PSAppConfig.m */,
+			);
+			name = AppConfig;
+			sourceTree = "<group>";
+		};
+		A7AA68C31D40E613004A5542 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68C41D40E61F004A5542 /* JSONParseUtils.h */,
+				A7AA68C51D40E61F004A5542 /* JSONParseUtils.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		A7AA68C91D40E62A004A5542 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68CA1D40E63C004A5542 /* PSServerSentError.h */,
+				A7AA68CB1D40E63C004A5542 /* PSServerSentError.m */,
+				A7AA68CC1D40E63C004A5542 /* NSError+API.h */,
+				A7AA68CD1D40E63C004A5542 /* NSError+API.m */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		A7AA68D41D40E76E004A5542 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA68D51D40E78C004A5542 /* NSObject+Runtime.h */,
+				A7AA68D61D40E78C004A5542 /* NSObject+Runtime.m */,
+				A7AA68D71D40E78C004A5542 /* NSObject+JSON.h */,
+				A7AA68D81D40E78C004A5542 /* NSObject+JSON.m */,
+				A7AA68D91D40E78C004A5542 /* NSDictionary+StripNil.h */,
+				A7AA68DA1D40E78C004A5542 /* NSDictionary+StripNil.m */,
+				A7AA68DB1D40E78C004A5542 /* NSArray+StripNil.h */,
+				A7AA68DC1D40E78C004A5542 /* NSArray+StripNil.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,9 +696,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AA68FF1D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA68C01D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA68FC1D40EF87004A5542 /* PSPlayground.m in Sources */,
+				A7AA68C61D40E61F004A5542 /* JSONParseUtils.m in Sources */,
+				A7AA68D11D40E63C004A5542 /* NSError+API.m in Sources */,
+				A7AA68E61D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
+				A7AA68DD1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
+				A7AA68BD1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
 				A7AA68731D40D3B7004A5542 /* ViewController.m in Sources */,
 				A7AA68701D40D3B7004A5542 /* AppDelegate.m in Sources */,
+				A7AA68E01D40E78C004A5542 /* NSObject+JSON.m in Sources */,
+				A7AA68E31D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA69041D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA68AD1D40D6C9004A5542 /* PSApiClient.m in Sources */,
 				A7AA686D1D40D3B7004A5542 /* main.m in Sources */,
+				A7AA68F41D40EB61004A5542 /* PSObject.m in Sources */,
+				A7AA68B61D40D759004A5542 /* PSAppConfig.m in Sources */,
+				A7AA68CE1D40E63C004A5542 /* PSServerSentError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +721,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AA68861D40D3B8004A5542 /* PhotosTests.m in Sources */,
+				A7AA69001D4122A4004A5542 /* PSApiManager.m in Sources */,
+				A7AA68E41D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA68D21D40E63C004A5542 /* NSError+API.m in Sources */,
+				A7AA68CF1D40E63C004A5542 /* PSServerSentError.m in Sources */,
+				A7AA68DE1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
+				A7AA68ED1D40E8C8004A5542 /* PSTestCase.m in Sources */,
+				A7AA68E11D40E78C004A5542 /* NSObject+JSON.m in Sources */,
+				A7AA68BE1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
+				A7AA68B71D40D759004A5542 /* PSAppConfig.m in Sources */,
+				A7AA68AE1D40D6C9004A5542 /* PSApiClient.m in Sources */,
+				A7AA68F51D40EB61004A5542 /* PSObject.m in Sources */,
+				A7AA68C11D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA69051D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA68E71D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
+				A7AA68C71D40E61F004A5542 /* JSONParseUtils.m in Sources */,
+				A7AA68EF1D40E985004A5542 /* PSRequestSerializer_Tests.m in Sources */,
+				A7AA68EA1D40E894004A5542 /* PSApiClient_Tests.m in Sources */,
+				A7AA68F11D40E99C004A5542 /* PSResponseSerializer_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +746,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AA68E51D40E78C004A5542 /* NSDictionary+StripNil.m in Sources */,
+				A7AA68D31D40E63C004A5542 /* NSError+API.m in Sources */,
+				A7AA68D01D40E63C004A5542 /* PSServerSentError.m in Sources */,
+				A7AA68DF1D40E78C004A5542 /* NSObject+Runtime.m in Sources */,
+				A7AA68E21D40E78C004A5542 /* NSObject+JSON.m in Sources */,
+				A7AA68BF1D40D83C004A5542 /* PSRequestSerializer.m in Sources */,
+				A7AA69061D412329004A5542 /* PSPhotosApiManager.m in Sources */,
+				A7AA68B81D40D759004A5542 /* PSAppConfig.m in Sources */,
+				A7AA68AF1D40D6C9004A5542 /* PSApiClient.m in Sources */,
+				A7AA68C21D40D83C004A5542 /* PSResponseSerializer.m in Sources */,
+				A7AA68F61D40EB61004A5542 /* PSObject.m in Sources */,
+				A7AA68E81D40E78C004A5542 /* NSArray+StripNil.m in Sources */,
 				A7AA68911D40D3B8004A5542 /* PhotosUITests.m in Sources */,
+				A7AA68C81D40E61F004A5542 /* JSONParseUtils.m in Sources */,
+				A7AA69011D4122A4004A5542 /* PSApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
