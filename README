@@ -1,0 +1,11 @@
+Next improvements (TODOs):
+1. Add more unit tests
+2. Check how look / perform on a device, and if needed:
+- add image downloader to download appropriate size thumbnails and crop them to the exact size needed to be presented
+- use PINCache to cache the created images
+3. Search can go in navigation bar on top of the grid, and search suggestions can be shown as overlay until the search is submitted - then suggestions can hide
+4. Refactor grid collection view data source code in a data source object.
+5. Persist history in core data
+6. Add views to indicate when there are no results
+7. Add spinners when loading initial page, and on when on the bottom when loading next page
+8. Paging logic can be abstracted

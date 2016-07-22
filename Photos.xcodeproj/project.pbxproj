@@ -129,6 +129,7 @@
 		A7AA69B41D41F7FE004A5542 /* Photos.JSON in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69B31D41F7FE004A5542 /* Photos.JSON */; };
 		A7AA69B61D42032C004A5542 /* Photos.JS in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69B51D42032C004A5542 /* Photos.JS */; };
 		A7AA69B81D42089E004A5542 /* Error.JS in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69B71D42089E004A5542 /* Error.JS */; };
+		A7AA69BB1D420AAA004A5542 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A7AA69BA1D420AAA004A5542 /* README */; };
 		F6EB9B209D4EC24A864DA6C5 /* libPods-PhotosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -251,6 +252,7 @@
 		A7AA69B31D41F7FE004A5542 /* Photos.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Photos.JSON; sourceTree = "<group>"; };
 		A7AA69B51D42032C004A5542 /* Photos.JS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Photos.JS; sourceTree = "<group>"; };
 		A7AA69B71D42089E004A5542 /* Error.JS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Error.JS; sourceTree = "<group>"; };
+		A7AA69BA1D420AAA004A5542 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		D3EDBAC77BD19A415190613F /* libPods-PhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C09C1AF8A43038DC9EC7E5 /* libPods-PhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -309,6 +311,7 @@
 		A7AA685F1D40D3B7004A5542 = {
 			isa = PBXGroup;
 			children = (
+				A7AA69BA1D420AAA004A5542 /* README */,
 				A7AA686A1D40D3B7004A5542 /* Photos */,
 				A7AA68841D40D3B8004A5542 /* PhotosTests */,
 				A7AA688F1D40D3B8004A5542 /* PhotosUITests */,
@@ -778,6 +781,7 @@
 				A7AA69B61D42032C004A5542 /* Photos.JS in Resources */,
 				A7AA69A81D41D039004A5542 /* PSPhotoSearchViewController.xib in Resources */,
 				A7AA694D1D414009004A5542 /* PSThumbnailCell.xib in Resources */,
+				A7AA69BB1D420AAA004A5542 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
