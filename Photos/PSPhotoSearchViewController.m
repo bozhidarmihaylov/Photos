@@ -69,11 +69,19 @@
     
     self.tableView.tableHeaderView = self.searchBar;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 0.0f, 0.0001f)];
+    
+    self.clearsSelectionOnViewWillAppear = YES;
 }
 
 - (void)registerCells {
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"Cell"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.goBarButtonItem.enabled = self.searchString.length > 0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -98,11 +106,20 @@
 
 #pragma mark - UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *text = [self textAtIndexPath:indexPath];
+    
+    self.searchBar.text = text;
+    
+    [self reloadData];
+}
+
+#pragma mark - UISearchBarDelegate
+
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     self.goBarButtonItem.enabled = searchText.length > 0;
-    
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
-    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0.3f];
+
+    [self reloadData];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
