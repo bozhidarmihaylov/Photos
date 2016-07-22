@@ -7,6 +7,7 @@
 //
 
 #import "PSAppCoordinator.h"
+#import "PSPhotoSearchViewController.h"
 #import "PSPhotoGridViewController.h"
 
 #import "UIViewController+Embed.h"
@@ -51,9 +52,10 @@
 - (void)setupInitialUI {
     UIWindow *window = self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    PSPhotoGridViewController *photoGridVC = [PSPhotoGridViewController new];
+    PSPhotoSearchViewController *photoSearchVC = [PSPhotoSearchViewController new];
+    photoSearchVC.title = @"Search for Photos";
     
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:photoGridVC];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:photoSearchVC];
     
     window.rootViewController = navVC;
     

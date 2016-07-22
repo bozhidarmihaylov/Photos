@@ -9,12 +9,26 @@
 #import "PSPhotoGridViewController.h"
 #import "PSThumbnailCell.h"
 #import "PSPhotosManager.h"
+#import "PSPhotosResponse.h"
+#import "PSPhotoThumbnailURLMaker.h"
+
+#import <ObjectiveSugar/ObjectiveSugar.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 static NSString * const ThumbnailCellIdentifier = @"PSThumbnailCell";
 
 @interface PSPhotoGridViewController ()
 
 @property (strong, nonatomic) PSPhotosManager *photosManager;
+
+@property (strong, nonatomic) PSPhotoThumbnailURLMaker *urlMaker;
+
+@property (strong, nonatomic) PSPageCursor *currentPageCursor;
+@property (strong, nonatomic) NSMutableArray *photos;
+
+@property (assign, nonatomic) BOOL loadingNextPage;
+
+@property (assign, nonatomic) CGSize itemSize;
 
 @end
 
@@ -29,12 +43,33 @@ static NSString * const ThumbnailCellIdentifier = @"PSThumbnailCell";
 
 #pragma mark - Accessors / Mutators
 
+- (PSPhoto *)photoAtIndexPath:(NSIndexPath *)indexPath {
+    return self.photos[indexPath.row];
+}
+
 - (NSNumber *)interItemOffset {
     return _interItemOffset ?: (self.interItemOffset = @(5.0f));
 }
 
 - (NSNumber *)numberOfColumns {
     return _numberOfColumns ?: (self.numberOfColumns = @(3));
+}
+
+- (PSPhotosManager *)photosManager {
+    return _photosManager ?: (self.photosManager = [PSPhotosManager sharedManager]);
+}
+
+- (PSPageCursor *)currentPageCursor {
+    return _currentPageCursor ?: (self.currentPageCursor = [PSPageCursor cursorWithPage:@(0)
+                                                                                perPage:@(20)]);
+}
+
+- (NSMutableArray *)photos {
+    return _photos ?: (self.photos = [NSMutableArray new]);
+}
+
+- (PSPhotoThumbnailURLMaker *)urlMaker {
+    return _urlMaker ?: (self.urlMaker = [PSPhotoThumbnailURLMaker new]);
 }
 
 #pragma mark - View life cycle
@@ -48,6 +83,52 @@ static NSString * const ThumbnailCellIdentifier = @"PSThumbnailCell";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [self setupCollectionViewLayout];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self loadNextPage];
+}
+
+- (void)loadNextPage {
+    if (!self.loadingNextPage) {
+        self.loadingNextPage = YES;
+        
+        __weak typeof(self) weakSelf = self;
+        
+        PSPageCursor *nextCursor = [self.currentPageCursor nextCursor];
+        
+        [self.photosManager photosWithSearchText:self.searchString
+                                      pageCursor:nextCursor
+                                      completion:^(PSPhotosResponse *response, NSError *error) {
+                                          weakSelf.loadingNextPage = NO;
+                                          
+                                          if (!error) {
+                                              weakSelf.currentPageCursor = nextCursor;
+                                              
+                                              __block NSInteger offset = weakSelf.photos.count;
+                                              
+                                              [weakSelf.photos addObjectsFromArray:response.results];
+                                              
+                                              NSArray *indexPaths = [response.results map:^id(id object) {
+                                                  return [NSIndexPath indexPathForItem:offset++
+                                                                             inSection:0];
+                                              }];
+                                              
+                                              [weakSelf.collectionView insertItemsAtIndexPaths:indexPaths];
+                                          }
+                                      }];
+    }
+}
+
+- (CGFloat)scale {
+    return [UIScreen mainScreen].scale;
+}
+
+- (void)setupCollectionViewLayout {
     UICollectionView *collectionView = self.collectionView;
     
     UIEdgeInsets contentInset = collectionView.contentInset;
@@ -58,10 +139,14 @@ static NSString * const ThumbnailCellIdentifier = @"PSThumbnailCell";
     
     CGFloat itemLength = (CGRectGetWidth(collectionView.frame) - horizontalInset + interItemOffset) / numberOfColumns - interItemOffset;
     
+    CGFloat scale = self.scale;
+    
+    itemLength = truncf(itemLength * scale) / scale;
+    
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     layout.minimumLineSpacing = interItemOffset;
     layout.minimumInteritemSpacing = interItemOffset;
-    layout.itemSize = CGSizeMake(itemLength, itemLength);    
+    self.itemSize = layout.itemSize = CGSizeMake(itemLength, itemLength);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,55 +161,60 @@ static NSString * const ThumbnailCellIdentifier = @"PSThumbnailCell";
           forCellWithReuseIdentifier:ThumbnailCellIdentifier];
 }
 
-#pragma mark <UICollectionViewDataSource>
+#pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 100;
+    return self.photos.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ThumbnailCellIdentifier
-                                                                           forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor colorWithRed:arc4random() % 256 / 255.0f
-                                           green:arc4random() % 256 / 255.0f
-                                            blue:arc4random() % 256 / 255.0f
-                                           alpha:1.0f];
+    PSThumbnailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ThumbnailCellIdentifier
+                                                                      forIndexPath:indexPath];
     
-    // Configure the cell
+    PSPhoto *photo = [self photoAtIndexPath:indexPath];
     
+    NSURL *photoURL = [self.urlMaker URLForThumbnailOfPhoto:photo
+                                          scalledToFillSize:self.itemSize];
+    
+    [cell.imageView setImageWithURL:photoURL];
+        
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
+#pragma mark - UIScrollViewDelegate
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.y + scrollView.bounds.size.height >= scrollView.contentSize.height - 50.0f) {
+        [self loadNextPage];
+    }
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+}
+
+#pragma mark - UICollectionViewDelegate
+
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
+	return NO;
 }
-*/
 
-/*
-// Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+    return NO;
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(PSThumbnailCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [cell.imageView cancelImageDownloadTask];
 }
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
 

@@ -8,6 +8,9 @@
 
 #import "PSDataManager.h"
 #import "PSPageCursor.h"
+#import "PSPhoto.h"
+
+#import <UIKit/UIKit.h>
 
 @interface PSPhotosManager : PSDataManager
 

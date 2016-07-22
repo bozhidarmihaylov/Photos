@@ -19,4 +19,6 @@
 @property (strong, nonatomic) NSNumber *page;
 @property (strong, nonatomic) NSNumber *perPage;
 
+- (PSPageCursor *)nextCursor;
+
 @end

@@ -14,7 +14,7 @@
 @implementation PSPhotosResponseHandler
 
 
-#pragma mark - SCApiResponseHandler
+#pragma mark - PSApiResponseHandler
 
 - (void)handleResponseWithResult:(NSDictionary *)resultJSON
                            error:(NSError *)error

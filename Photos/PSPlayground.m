@@ -9,6 +9,8 @@
 #import "PSPlayground.h"
 #import "PSPhotosApiManager.h"
 #import "PSPhotosManager.h"
+#import "PSThumbnailMaker.h"
+#import "PSPhotosResponse.h"
 
 @implementation PSPlayground
 
@@ -37,14 +39,30 @@
 //                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
 //                              }];
     
-//    PSPhotosManager *photosManager = [PSPhotosManager sharedManager];
+    PSPhotosManager *photosManager = [PSPhotosManager sharedManager];
+    
+    [photosManager photosWithSearchText:@"cats"
+                             pageCursor:[PSPageCursor cursorWithPage:@(1)
+                                                             perPage:nil]
+                             completion:^(PSPhotosResponse *response, NSError *error) {
+                                 PSPhoto *photo = response.results.firstObject;
+                                 
+//                                 [photosManager thumbnailForPhoto:photo
+//                                                         withSize:CGSizeMake(96.66f, 96.66f)
+//                                                       completion:^(UIImage *thumbnail, NSError *error) {
+//                                                           NSLog(@"\nthumbnail:\n%@\nerror:\n%@", thumbnail, error);
+//                                                       }];
+                             }];
+    
+//    PSThumbnailMaker *maker = [PSThumbnailMaker new];
 //    
-//    [photosManager photosWithSearchText:@"cats"
-//                             pageCursor:[PSPageCursor cursorWithPage:@(1)
-//                                                             perPage:nil]
-//                             completion:^(id result, NSError *error) {
-//                                  NSLog(@"\nresult:\n%@\nerror=\n%@", result, error);
-//                             }];
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"image" ofType:@"jpg"];
+//    NSData *imageData = [NSData dataWithContentsOfFile:filePath];
+//    
+//    
+//    UIImage *image = [maker thumbnailWithSize:CGSizeMake(200, 200) forImageWithData:imageData];
+    
+//    NSLog(@"%@", image);
 }
 
 @end

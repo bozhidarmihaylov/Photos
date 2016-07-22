@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PSPhotoSearchViewController">
+            <connections>
+                <outlet property="searchBar" destination="BI4-9C-PWh" id="me0-Iu-arv"/>
+                <outlet property="view" destination="WD3-Dq-GTD" id="fFz-Ip-SXA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WD3-Dq-GTD">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="cgI-Rz-1Ug"/>
+                <outlet property="delegate" destination="-1" id="BEv-tX-ib4"/>
+            </connections>
+        </tableView>
+        <searchBar contentMode="redraw" id="BI4-9C-PWh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <textInputTraits key="textInputTraits"/>
+            <scopeButtonTitles>
+                <string>Title</string>
+                <string>Title</string>
+            </scopeButtonTitles>
+            <connections>
+                <outlet property="delegate" destination="-1" id="6E5-qm-uwM"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="7"/>
+        </searchBar>
+    </objects>
+</document>

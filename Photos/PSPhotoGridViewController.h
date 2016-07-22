@@ -6,6 +6,8 @@
 //  Copyright © 2016 Bozhidar Mihaylov. All rights reserved.
 //
 
+#import "PSPageCursor.h"
+
 #import <UIKit/UIKit.h>
 
 @class PSPhotoGridViewController;
@@ -19,5 +21,7 @@
 
 @property (strong, nonatomic) NSNumber *interItemOffset; // defaults to 5.0f points
 @property (strong, nonatomic) NSNumber *numberOfColumns; // defaults to 3
+
+@property (copy, nonatomic) NSString *searchString;
 
 @end

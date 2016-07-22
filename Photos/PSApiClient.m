@@ -82,7 +82,12 @@ static NSString * const PSFormatQueryParamName = @"format";
     
     NSURL *url = request.URL;
     
-    if (![url.query containsString:PSAppKeyQueryParamName]) {
+    NSURL *baseURL = self.appConfig.APIBaseURL;
+    
+    if ([url.host isEqualToString:baseURL.host] &&
+        [url.path isEqualToString:baseURL.path] &&
+        ![url.query containsString:PSAppKeyQueryParamName])
+    {
         NSMutableURLRequest *mutableRequest = [request mutableCopy];
         
         mutableRequest.URL = [self URLByAddingStaticQueryArgsTorURL:url];

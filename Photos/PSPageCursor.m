@@ -29,5 +29,10 @@
     return self;
 }
 
+- (PSPageCursor *)nextCursor {
+    return [self.class cursorWithPage:@(self.page.integerValue + 1)
+                              perPage:self.perPage];
+}
+
 
 @end

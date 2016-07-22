@@ -9,7 +9,24 @@
 #import "PSResponseSerializer.h"
 #import "NSError+API.h"
 
+@interface PSResponseSerializer ()
+
+@property (strong, nonatomic) AFHTTPResponseSerializer *baseResponseSerializer;
+
+@end
+
 @implementation PSResponseSerializer
+
+#pragma mark - Initialization
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.baseResponseSerializer = [AFHTTPResponseSerializer serializer];
+    }
+    return self;
+}
+
+#pragma mark - Utilities
 
 - (BOOL)isApiURL:(NSURL *)url {
     NSURL *baseURL = self.apiBaseURL;
@@ -17,8 +34,6 @@
     return [url.host isEqualToString:baseURL.host]
         && [url.path isEqualToString:baseURL.path];
 }
-
-#pragma mark - 
 
 - (NSData *)JSONDataForFlickrResponseData:(NSData *)data {
     NSData *result = data;
@@ -55,6 +70,8 @@
     return result;
 }
 
+#pragma mark - AFURLResponseSerialization
+
 - (id)responseObjectForResponse:(NSHTTPURLResponse *)response
                            data:(NSData *)data
                           error:(NSError *__autoreleasing *)outError
@@ -87,10 +104,10 @@
                 // ok
             }
             else if ([apiStatus isEqualToString:@"fail"]) {
-                result = nil;
-                error = [NSError errorWithDomain:@"com.bozhidarmihaylov.Photos.api" code:2 userInfo:nil];
-                
                 errorInfo = result;
+                result = nil;
+                
+                error = [NSError errorWithDomain:@"com.bozhidarmihaylov.Photos.api" code:2 userInfo:nil];
             }
             else {
                 result = nil;
@@ -104,9 +121,9 @@
         }
     }
     else {
-        [self validateResponse:response
-                          data:data
-                         error:&error];
+        [self.baseResponseSerializer validateResponse:response
+                                                 data:data
+                                                error:&error];
         
         if (!error) {
             result = data;

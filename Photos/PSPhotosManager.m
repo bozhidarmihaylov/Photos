@@ -8,7 +8,9 @@
 
 #import "PSPhotosManager.h"
 #import "PSPhotosApiManager.h"
+
 #import "PSPhotosResponseHandler.h"
+
 #import "NSDictionary+StripNil.h"
 
 #import <ObjectiveSugar/ObjectiveSugar.h>
@@ -16,6 +18,7 @@
 @interface PSPhotosManager ()
 
 @property (strong, nonatomic) PSPhotosApiManager *apiManager;
+
 @property (strong, nonatomic) id<PSApiResponseHandler> photosResponseHandler;
 
 @end
@@ -35,6 +38,8 @@
     return _sharedManager;
 }
 
+#pragma mark - Accessors / Mutators
+
 - (PSPhotosApiManager *)apiManager {
     return _apiManager ?: (self.apiManager = [PSPhotosApiManager sharedManager]);
 }
@@ -42,7 +47,6 @@
 - (id<PSApiResponseHandler>)photosResponseHandler {
     return _photosResponseHandler ?: (self.photosResponseHandler = [PSPhotosResponseHandler new]);
 }
-
 
 #pragma mark - Public methods
 
