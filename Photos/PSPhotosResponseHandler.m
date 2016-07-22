@@ -35,7 +35,7 @@
                 result.perPage = [JSONParseUtils numberFromJSON:[resultJSON valueForKeyPath:@"perpage"]];
                 
                 result.pageCount = [JSONParseUtils numberFromJSON:[resultJSON valueForKeyPath:@"pages"]];
-                result.page = [JSONParseUtils numberFromJSON:[resultJSON valueForKeyPath:@"total"]];
+                result.totalCount = [JSONParseUtils numberFromJSON:[resultJSON valueForKeyPath:@"total"]];
                 
                 NSArray *photoInfos = [JSONParseUtils arrayFromJSON:[resultJSON valueForKeyPath:@"photo"]];
                 

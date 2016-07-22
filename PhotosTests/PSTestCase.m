@@ -10,4 +10,12 @@
 
 @implementation PSTestCase
 
+- (NSData *)resourceNamed:(NSString *)resourceName {
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:resourceName ofType:nil];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    
+    return data;
+
+}
+
 @end

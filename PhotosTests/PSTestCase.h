@@ -8,6 +8,10 @@
 
 #import <XCTest/XCTest.h>
 
+#import <OCMock/OCMock.h>
+
 @interface PSTestCase : XCTestCase
+
+- (NSData *)resourceNamed:(NSString *)resourceName;
 
 @end

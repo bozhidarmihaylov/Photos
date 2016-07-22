@@ -119,7 +119,8 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     self.goBarButtonItem.enabled = searchText.length > 0;
 
-    [self reloadData];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0.1f];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {

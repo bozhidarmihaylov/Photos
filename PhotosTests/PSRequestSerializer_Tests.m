@@ -7,6 +7,7 @@
 //
 
 #import "PSTestCase.h"
+#import "PSRequestSerializer.h"
 
 @interface PSRequestSerializer_Tests : PSTestCase
 
@@ -20,6 +21,10 @@
 
 - (void)tearDown {
     [super tearDown];
+}
+
+- (void)test_delegateIsCalled {
+    
 }
 
 @end

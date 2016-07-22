@@ -18,7 +18,7 @@
 //    CGFloat scale = [UIScreen mainScreen].scale;
     
 //    CGFloat maxDimension = MAX(size.width * scale, size.height * scale);
-//    CGFloat doubleMaxDimension = maxDimension * 2.0f;
+//    CGFloat doubleMaxDimension = maxDimension * 2.0f; // 16 : 9 ~ 2 : 1
     
     NSString *suffix = nil;
     

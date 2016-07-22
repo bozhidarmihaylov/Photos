@@ -26,7 +26,7 @@
 {
     NSMutableDictionary *newInfo = [params mutableCopy] ?: [NSMutableDictionary new];
     
-    newInfo[@"method"] = @"flickr.photos.search";
+    newInfo[@"method"] = method;
 
     return [newInfo copy];
 }
